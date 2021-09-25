@@ -1,0 +1,34 @@
+.has-js {
+    [data-scrolly='fromBottom'] {
+        opacity: 0;
+        transition: all 0.4s ease-out;
+        transform: translateY(60px);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    [data-scrolly='fromLeft'] {
+        opacity: 0;
+        transition: all 0.4s ease-out;
+        transform: translateX(-60px);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    [data-scrolly='fromRight'] {
+        opacity: 0;
+        transition: all 0.4s ease-out;
+        transform: translateX(60px);
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+}
