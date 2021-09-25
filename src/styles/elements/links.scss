@@ -5,16 +5,16 @@
 
 a {
     &:link {
-        color: var(--color-text-primary);
+        color: var(--color-font-primary);
         text-decoration: none;
     }
 
     &:visited {
-        color: var(--color-text-primary);
+        color: var(--color-font-primary);
     }
 
     &:hover {
-        color: var(--color-text-secondary);
+        color: var(--color-font-primary);
         cursor: pointer;
     }
 
@@ -23,6 +23,6 @@ a {
     }
 
     &:focus {
-        color: var(--color-text-secondary);
+        color: var(--color-font-secondary);
     }
 }
