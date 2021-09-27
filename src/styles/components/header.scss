@@ -28,6 +28,11 @@ header {
     .header-is-hidden.is-scrolling-down & {
         transform: translateY(-100%) translateY(4px);
     }
+
+    @media screen and (min-width: $breakpoint-md){
+        background-color: rgba(1,1,1,0);
+    }
+    
 }
 
 .header__brand {

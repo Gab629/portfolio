@@ -1,3 +1,41 @@
 
+.hero_accueil{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   height: 80vh;
 
+
+    h1{
+      font-family: var(--font-secondary);
+      color: #fff;
+      text-align: center;  
+      
+    }
+
+    h3{
+        color: var(--color-font-secondary);
+        text-align: center;
+    }
+
+    a.button{
+        text-align: center;
+        font-family: var(--font-secondary);
+        font-weight: bold;
+        font-size: var(--font-size-content-primary);
+
+        background-color: var(--color-bg-tertiary);
+        border-radius: 6px;
+
+        width: 260px;
+        height: 75px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        
+    }
+}
 
