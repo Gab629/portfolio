@@ -1,6 +1,8 @@
 import Header from './components/Header';
 import Scrolly from './components/Scrolly';
 import Form from './components/Form';
+import particles from './components/particles';
+import app from './components/app';
 
 export default class ComponentFactory {
   constructor() {
@@ -9,6 +11,8 @@ export default class ComponentFactory {
       Header,
       Scrolly,
       Form,
+      particles,
+      app,
     };
     this.init();
   }

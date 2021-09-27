@@ -9,7 +9,9 @@
     "start": "gulp",
     "build": "gulp build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "particles.js": "^2.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
