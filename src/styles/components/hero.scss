@@ -10,12 +10,15 @@
         color: #fff;
         text-align: center;
         z-index: 1;
+        font-size: 40px;
     }
 
     h3 {
         color: var(--color-font-secondary);
         text-align: center;
         z-index: 1;
+        font-size: var(--font-size-h6);
+        margin-top: 10px;
     }
 
     a.button {
@@ -34,5 +37,25 @@
         align-items: center;
         justify-content: center;
         z-index: 1;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        h1 {
+            font-size: 100px;
+        }
+
+        h3 {
+            font-size: var(--font-size-h4);
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        h1 {
+            font-size: var(--font-size-h1);
+        }
+
+        h3 {
+            font-size: var(--font-size-h3);
+        }
     }
 }
