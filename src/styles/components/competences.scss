@@ -1,0 +1,31 @@
+.competences{
+    color: var(--color-font-primary);
+    text-align: center;
+
+    h2{
+        font-size: 36px;
+    }
+
+    .logiciel{
+        padding: 30px;
+    }
+
+    img{
+        width: 25%;
+        height: 25%;
+        padding: 15px 0;
+    }
+
+    h5{
+        font-size: 26px;
+        font-weight: 600;
+        color: var(--color-font-secondary);
+        margin: 10px 0;
+    }
+
+    p{
+        font-size: 18px;
+        width: 55%;
+        margin: 0 auto;
+    }
+}
