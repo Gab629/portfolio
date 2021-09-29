@@ -1,10 +1,13 @@
 .descriptionGab{
     color: var(--color-font-primary);
     text-align: center;
-
+    min-height: 1300px;
 
     .wrapper{
         padding: 20px 55px 0 55px;
+        position: relative;
+        z-index: 2;
+        background-color: transparent;
     }
     h2{
         font-size: 30px;
@@ -24,6 +27,7 @@
 
     img{
         border-radius: 52px;
+        
     }
 
     .qualites{
@@ -32,5 +36,10 @@
 
     .qualite{
         margin: 60px 0;
+    }
+
+    img > #particles-js {
+        -webkit-mask: url(#mask);
+        mask: url(#mask);
     }
 }
