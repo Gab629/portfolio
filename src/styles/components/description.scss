@@ -1,33 +1,46 @@
 .descriptionGab {
     color: var(--color-font-primary);
     text-align: center;
-    min-height: 1300px;
-    overflow: hidden;
-    position: relative;
+    background-color: var(--color-bg-secondary);
+    position: absolute;
+    top: 0;
+    padding: 50px 0;
+
+    @media screen and (min-width: $breakpoint-md) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        height: 100vh;
+    }
 
     .wrapper {
         padding: 20px 55px 0 55px;
-        position: relative;
-        z-index: 2;
-        background-color: transparent;
 
         @media screen and (min-width: $breakpoint-md) {
             display: flex;
-            justify-content: space-between;
             flex-direction: row-reverse;
             align-items: center;
             font-weight: 300;
             text-align: left;
-            padding: 0 30px;
+            padding: 0;
+            margin: 0 30px 0 30px;
         }
-    }
 
-    .contenu_description {
-        width: 50%;
+        @media screen and (min-width: $breakpoint-lg) {
+            margin: 0;
+            justify-content: center;
+        }
     }
 
     h2 {
         font-size: 30px;
+
+        @media screen and (min-width: $breakpoint-lg) {
+            font-size: var(--font-size-h2);
+        }
     }
 
     h5 {
@@ -35,18 +48,43 @@
         font-weight: 600;
         color: var(--color-font-secondary);
         margin: 0;
+
+        @media screen and (min-width: $breakpoint-lg) {
+            font-size: var(--font-size-h5);
+        }
     }
 
     p {
         font-size: 18px;
+
+        @media screen and (min-width: $breakpoint-lg) {
+            font-size: var(--font-size-content-primary);
+        }
     }
 
     img {
         border-radius: 52px;
 
+        @media screen and (min-width: $breakpoint-sm) {
+            width: 50%;
+        }
         @media screen and (min-width: $breakpoint-md) {
-            height: 100%;
-            width: 45%;
+            width: 40%;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            width: 30%;
+        }
+    }
+
+    .contenu_description {
+        @media screen and (min-width: $breakpoint-md) {
+            width: 60%;
+            padding-right: 50px;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            width: 50%;
         }
     }
 
