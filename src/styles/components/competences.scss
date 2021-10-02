@@ -1,34 +1,92 @@
-.competences{
+.competences {
     color: var(--color-font-primary);
     text-align: center;
+    background-color: var(--color-bg-secondary);
+    padding: 20px 0;
+    margin-top: 1500px;
 
-    h2{
-        margin-top: 150px;
+    @media screen and (min-width: $breakpoint-md) {
+        margin: 1500px 30px 0 30px;
+        border-radius: 30px;
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        margin: 1000px 30px 0 30px;
+        padding: 20px 0 60px 0;
+    }
+
+    h2 {
         font-size: 36px;
     }
 
-    .logiciel{
+    .logiciels {
+        @media screen and (min-width: $breakpoint-md) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    .logiciel {
         padding: 30px;
+
+        @media screen and (min-width: $breakpoint-md) {
+            padding: 10px;
+            width: 19%;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
-    
-    img{
+    img {
         width: 25%;
-        height: 25%;
         padding: 15px 0;
-        
+        object-fit: cover;
+
+        @media screen and (min-width: $breakpoint-md) {
+            width: 75px;
+            height: 103px;
+            object-fit: contain;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            width: 175px;
+            height: 178px;
+            height: none;
+        }
     }
 
-    h5{
+    h5 {
         font-size: 26px;
         font-weight: 600;
         color: var(--color-font-secondary);
         margin: 10px 0;
+
+        @media screen and (min-width: $breakpoint-lg) {
+            font-size: var(--font-size-h5);
+        }
     }
 
-    p{
+    p {
         font-size: 18px;
         width: 55%;
         margin: 0 auto;
+        font-weight: 300;
+
+        @media screen and (min-width: $breakpoint-md) {
+            width: 80%;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            font-size: var(--font-size-content-primary);
+            margin: 0;
+            width: 85%;
+        }
     }
 }
