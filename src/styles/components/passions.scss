@@ -1,36 +1,98 @@
-.passionsContainer{
+.passionsContainer {
     color: var(--color-font-primary);
     text-align: center;
+    background-color: var(--color-bg-secondary);
+    width: 100%;
+    padding: 60px 0 60px 0;
+    margin: 30px 0;
 
-    h2{
+    h2 {
         font-size: 36px;
+
+        @media screen and (min-width: $breakpoint-lg) {
+            font-size: var(--font-size-h2);
+        }
     }
 
-    img{
+    img {
         width: 25%;
         height: 25%;
         padding: 15px 0;
+
+        @media screen and (min-width: $breakpoint-md) {
+            width: 130px;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            width: 140px;
+            padding: 10px 0;
+        }
+    }
+    .passions {
+        @media screen and (min-width: $breakpoint-md) {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
     }
 
-    .passion{
+    .passion {
         padding: 30px;
+
+        @media screen and (min-width: $breakpoint-md) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            padding: 20px;
+        }
     }
 
-    h5{
+    .passion_texte {
+        @media screen and (min-width: $breakpoint-md) {
+            margin-left: 10%;
+            width: 60%;
+
+            @media screen and (min-width: $breakpoint-xl) {
+                margin-left: 5%;
+                width: 45%;
+            }
+        }
+    }
+
+    h5 {
         font-size: 26px;
         font-weight: 600;
-        color: var(--color-font-secondary);
         margin: 15px 0;
+
+        @media screen and (min-width: $breakpoint-md) {
+            text-align: left;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            font-size: var(--font-size-h5);
+        }
     }
 
-    p{
+    p {
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 300;
         width: 95%;
         margin: 0 auto;
+
+        @media screen and (min-width: $breakpoint-md) {
+            text-align: left;
+            margin: 0;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            font-size: var(--font-size-content-primary);
+        }
     }
 
-    .evidence{
+    .evidence {
         color: var(--color-font-secondary);
         font-weight: 600;
     }
