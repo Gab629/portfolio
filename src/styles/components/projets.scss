@@ -37,6 +37,7 @@
             .img_projet {
                 background-image: url(/assets/images/jeu-rpg.png);
                 background-position-x: 95%;
+                background-position-y: 60%;
                 background-size: cover;
             }
         }
@@ -49,10 +50,10 @@
         }
         &:nth-child(5) {
             .img_projet {
-                background-image: url(/assets/images/touchdesigner.jpg);
-                background-position-x: 95%;
-                background-position-y: 40%;
-                background-size: 230%;
+                background-image: url(/assets/images/touchdesigner.png);
+                background-position-x: 50%;
+                background-position-y: 45%;
+                background-size: 250%;
             }
         }
 
