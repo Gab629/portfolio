@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&family=Work+Sans:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Portfolio</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <header class="header" data-component="Header">
+            <a href="index.html" class="header__brand">
+                <img src="assets/images/logo.png" alt="logo_gab" />
+            </a>
+
+            <nav class="nav-primary">
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-primary__item"
+                            >Accueil</a
+                        >
+                    </li>
+                    <li>
+                        <a href="projets.html" class="nav-primary__item"
+                            >Projets</a
+                        >
+                    </li>
+                    <li class="nav-right">
+                        <a href="page-a-propos.html" class="nav-primary__item"
+                            >À propos</a
+                        >
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-primary__item"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__toggle js-toggle">
+                <div class="points">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="barres">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </header>
+
+        <section class="contact">
+            <div class="formulaire">
+                <div class="form__body">
+                <fieldset class="form-container">
+                    <div class="informations">
+                        <div class="input">
+                            <label class="input__label" for="name">Votre nom</label>
+                            <input
+                                class="input__element"
+                                type="text"
+                                name="fullname"
+                                id="fullname"
+                                placeholder="Gabriel Gauthier"
+                                required
+                            />
+                        </div>
+                        <div class="input">
+                            <label class="input__label" for="email">Courriel</label>
+                            <input
+                                class="input__element"
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="gab.gauthier@gmail.com"
+                                required
+                            />
+                        </div>
+                        <div class="input">
+                            <label class="input__label" for="phone">Téléphone</label>
+                            <input
+                                class="input__element"
+                                type="tel"
+                                name="phone"
+                                id="phone"
+                                placeholder="(555) 666-7777"
+                                pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
+                                required
+                            />
+                        </div>
+
+                        
+                </div>
+
+                    <div class="commentaires">
+                        <div class="input textarea u-grid-fullwidth">
+                            <label class="input__label" for="comment">Commentaire</label>
+                            <textarea 
+                                class="input__element" 
+                                name="comment" 
+                                id="comment" 
+                                required>
+                            </textarea>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </fieldset>
+
+                <div class="boutons-container">
+                    <button class="button-contact">Envoyer</button>
+                </div>
+                
+            </div>
+        </div>
+            <div class="reseaux">
+                <h6>Plus de contacts</h6>
+                <div class="infos">
+                    <p class="nom">Gabriel Gauthier</p>
+                    <p>gab.gauthier2002@gmail.com</p>
+                    <p>514-605-6290</p>
+                </div>
+                <div class="boutons-container">
+                <a class="button-contact" href="">Téléchargez mon CV</a>
+            </div>
+            </div>
+            <div id="particles-js"></div>
+        </section>
+        
+
+        
+    </body>
+</html>
