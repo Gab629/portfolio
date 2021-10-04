@@ -1,5 +1,19 @@
 .contact{
     background-color: var(--color-bg-secondary);
+
+    h3{
+        font-size: 26px;
+        margin: 0;
+        padding: 50px 0 0 20px;
+        color: var(--color-font-primary);
+        font-family: var(--font-secondary);
+    
+        span{
+            font-family: var(--font-primary);
+            color: var(--color-font-secondary);
+            font-size: 36px;
+        }
+    }
 }
 
 
@@ -84,19 +98,5 @@
         font-weight: bold;
         font-size: 18px;
         margin: 5px 0;
-    }
-}
-
-h3{
-    font-size: 26px;
-    margin: 0;
-    padding: 50px 0 0 20px;
-    color: var(--color-font-primary);
-    font-family: var(--font-secondary);
-
-    span{
-        font-family: var(--font-primary);
-        color: var(--color-font-secondary);
-        font-size: 36px;
     }
 }
