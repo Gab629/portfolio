@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 10px;
+    padding: 10px 10px 30px 10px;
 
     border: none;
 }
@@ -56,4 +56,47 @@
 .boutons-container{
     display: flex;
     justify-content: center;
+}
+
+.reseaux-container{
+    padding: 80px 0 40px 0;
+    font-family: var(--font-secondary);
+
+    h6{
+        color: var(--color-font-secondary);
+        margin: 0;
+        text-align: center;
+        font-size: 18px;
+        
+    }
+}
+
+.reseaux{
+    background-color: var(--color-bg-primary);
+    margin: 10px 20px 40px 20px;
+    padding: 20px;
+    border-radius: 6px;
+
+    color: var(--color-font-primary);
+    font-size: 14px;
+
+    .nom{
+        font-weight: bold;
+        font-size: 18px;
+        margin: 5px 0;
+    }
+}
+
+h3{
+    font-size: 26px;
+    margin: 0;
+    padding: 50px 0 0 20px;
+    color: var(--color-font-primary);
+    font-family: var(--font-secondary);
+
+    span{
+        font-family: var(--font-primary);
+        color: var(--color-font-secondary);
+        font-size: 36px;
+    }
 }
