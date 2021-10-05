@@ -61,92 +61,94 @@
             </button>
         </header>
 
-        
-
         <section class="contact">
-            <h3>Donnons notre maximum <span>ensemble</span> </h3>
             <div class="formulaire">
+                <h3>Donnons notre maximum <span>ensemble</span></h3>
                 <div class="form__body">
-                <fieldset class="form-container">
-                    <div class="informations">
-                        <div class="input">
-                            <label class="input__label" for="name">Votre nom</label>
-                            <input
-                                class="input__element"
-                                type="text"
-                                name="fullname"
-                                id="fullname"
-                                placeholder="Gabriel Gauthier"
-                                required
-                            />
-                        </div>
-                        <div class="input">
-                            <label class="input__label" for="email">Courriel</label>
-                            <input
-                                class="input__element"
-                                type="email"
-                                name="email"
-                                id="email"
-                                placeholder="gab.gauthier@gmail.com"
-                                required
-                            />
-                        </div>
-                        <div class="input">
-                            <label class="input__label" for="phone">Téléphone</label>
-                            <input
-                                class="input__element"
-                                type="tel"
-                                name="phone"
-                                id="phone"
-                                placeholder="(555) 666-7777"
-                                pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
-                                required
-                            />
+                    <fieldset class="form-container">
+                        <div class="informations">
+                            <div class="input">
+                                <label class="input__label" for="name"
+                                    >Votre nom</label
+                                >
+                                <input
+                                    class="input__element"
+                                    type="text"
+                                    name="fullname"
+                                    id="fullname"
+                                    placeholder="Gabriel Gauthier"
+                                    required
+                                />
+                            </div>
+                            <div class="input">
+                                <label class="input__label" for="email"
+                                    >Courriel</label
+                                >
+                                <input
+                                    class="input__element"
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="gab.gauthier@gmail.com"
+                                    required
+                                />
+                            </div>
+                            <div class="input">
+                                <label class="input__label" for="phone"
+                                    >Téléphone</label
+                                >
+                                <input
+                                    class="input__element"
+                                    type="tel"
+                                    name="phone"
+                                    id="phone"
+                                    placeholder="(555) 666-7777"
+                                    pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
+                                    required
+                                />
+                            </div>
                         </div>
 
-                        
-                </div>
-
-                    <div class="commentaires">
-                        <div class="input textarea u-grid-fullwidth">
-                            <label class="input__label" for="comment">Commentaire</label>
-                            <textarea 
-                                class="input__element" 
-                                name="comment" 
-                                id="comment" 
-                                required>
-                            </textarea>
-                            
+                        <div class="commentaires">
+                            <div class="input textarea u-grid-fullwidth">
+                                <label class="input__label" for="comment"
+                                    >Commentaire</label
+                                >
+                                <textarea
+                                    class="input__element"
+                                    name="comment"
+                                    id="comment"
+                                    required
+                                >
+                                </textarea>
+                            </div>
                         </div>
-                        
+                    </fieldset>
+
+                    <div class="boutons-container">
+                        <button class="button-contact">Envoyer</button>
                     </div>
-                    
-                </fieldset>
-
-                <div class="boutons-container">
-                    <button class="button-contact">Envoyer</button>
                 </div>
-                
             </div>
-        </div>
             <div class="reseaux-container">
                 <h6>Plus de contacts</h6>
                 <div class="reseaux">
-                <div class="infos">
-                    <p class="nom">Gabriel Gauthier</p>
-                    <p>gab.gauthier2002@gmail.com</p>
-                    <p>514-605-6290</p>
+                    <div class="infos">
+                        <svg class="icon icon--xl">
+                            <use xlink:href="#icon-Linkedin"></use>
+                        </svg>
+
+                        <p class="nom">Gabriel Gauthier</p>
+                        <p>gab.gauthier2002@gmail.com</p>
+                        <p>514-605-6290</p>
+                    </div>
                 </div>
-                
-            </div>
-            <div class="boutons-container">
-                <a class="button-contact" href="">Téléchargez mon CV</a>
-            </div>
+                <div class="boutons-container">
+                    <a class="button-contact" href="">Téléchargez mon CV</a>
+                </div>
             </div>
             <div id="particles-js"></div>
         </section>
         <p class="copyright">Gabriel Gauthier © Tous droits réservés</p>
-
-        
     </body>
 </html>

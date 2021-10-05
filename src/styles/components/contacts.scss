@@ -1,38 +1,70 @@
-.contact{
+.contact {
     background-color: var(--color-bg-secondary);
 
-    h3{
+    h3 {
         font-size: 26px;
         margin: 0;
         padding: 50px 0 0 20px;
         color: var(--color-font-primary);
         font-family: var(--font-secondary);
-    
-        span{
+
+        span {
             font-family: var(--font-primary);
             color: var(--color-font-secondary);
             font-size: 36px;
         }
     }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        h3 {
+            width: 50%;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        display: flex;
+        padding: 0 0 50px 0;
+
+        h3 {
+            width: 70%;
+        }
+    }
 }
 
-
-
-.form-container{
+.form-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 10px 30px 10px;
 
     border: none;
+
+    @media screen and (min-width: $breakpoint-md) {
+        flex-direction: row;
+    }
 }
 
-.informations, .commentaires{
+.formulaire {
+    width: 60%;
+}
+
+.informations,
+.commentaires {
     width: 100%;
 }
 
-.informations .input{
+.informations .input {
     margin: 20px 0;
+}
+
+.commentaires {
+    @media screen and (min-width: $breakpoint-md) {
+        margin: 0 0 0 20px;
+        .input__element {
+            margin: 10px 0 0 0;
+            height: 240px;
+        }
+    }
 }
 
 .input__label {
@@ -55,7 +87,7 @@
     margin: 10px 0;
 }
 
-.button-contact{
+.button-contact {
     padding: 15px 20px;
     margin: 0 auto;
     background-color: var(--color-bg-tertiary);
@@ -65,27 +97,35 @@
 
     border: none;
     border-radius: 6px;
+
+    @media screen and (min-width: $breakpoint-md) {
+        padding: 10px 20px;
+        border-radius: 15px;
+    }
 }
 
-.boutons-container{
+.boutons-container {
     display: flex;
     justify-content: center;
 }
 
-.reseaux-container{
+.reseaux-container {
     padding: 80px 0 40px 0;
     font-family: var(--font-secondary);
 
-    h6{
+    h6 {
         color: var(--color-font-secondary);
         margin: 0;
         text-align: center;
         font-size: 18px;
-        
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        padding: 147px 0 40px 40px;
     }
 }
 
-.reseaux{
+.reseaux {
     background-color: var(--color-bg-primary);
     margin: 10px 20px 40px 20px;
     padding: 20px;
@@ -94,7 +134,7 @@
     color: var(--color-font-primary);
     font-size: 14px;
 
-    .nom{
+    .nom {
         font-weight: bold;
         font-size: 18px;
         margin: 5px 0;
