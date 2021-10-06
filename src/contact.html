@@ -62,7 +62,7 @@
         </header>
 
         <section class="contact">
-            <div class="formulaire">
+            <form class="formulaire" autocomplete="off" data-component="Form">
                 <h3>Donnons notre maximum <span>ensemble</span></h3>
                 <div class="form__body">
                     <fieldset class="form-container">
@@ -110,7 +110,7 @@
                         </div>
 
                         <div class="commentaires">
-                            <div class="input textarea u-grid-fullwidth">
+                            <div class="input textarea">
                                 <label class="input__label" for="comment"
                                     >Commentaire</label
                                 >
@@ -129,20 +129,42 @@
                         <button class="button-contact">Envoyer</button>
                     </div>
                 </div>
-            </div>
+            </form>
             <div class="reseaux-container">
                 <h6>Plus de contacts</h6>
                 <div class="reseaux">
                     <div class="infos">
-                        <svg class="icon icon--xl">
-                            <use xlink:href="#icon-Linkedin"></use>
-                        </svg>
-
                         <p class="nom">Gabriel Gauthier</p>
-                        <p>gab.gauthier2002@gmail.com</p>
-                        <p>514-605-6290</p>
+
+                        <div class="information-perso">
+                            <svg class="icon icon--xl">
+                                <use xlink:href="#icon-sketchfab"></use>
+                            </svg>
+                            <p>gab.gauthier2002@gmail.com</p>
+                        </div>
+                        <div class="information-perso">
+                            <svg class="icon icon--xl">
+                                <use xlink:href="#icon-codepen"></use>
+                            </svg>
+                            <p>514-605-6290</p>
+                        </div>
+                        <div class="reseaux-sociaux">
+                            <svg class="icon icon--xl">
+                                <use xlink:href="#icon-linkedin"></use>
+                            </svg>
+                            <svg class="icon icon--xl">
+                                <use xlink:href="#icon-github"></use>
+                            </svg>
+                            <svg class="icon icon--xl">
+                                <use xlink:href="#icon-codepen"></use>
+                            </svg>
+                            <svg class="icon icon--xl">
+                                <use xlink:href="#icon-sketchfab"></use>
+                            </svg>
+                        </div>
                     </div>
                 </div>
+
                 <div class="boutons-container">
                     <a class="button-contact" href="">Téléchargez mon CV</a>
                 </div>
