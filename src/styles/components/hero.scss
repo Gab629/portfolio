@@ -37,6 +37,12 @@
         align-items: center;
         justify-content: center;
         z-index: 1;
+
+        transition: 0.4s all;
+
+        &:hover{
+            background-color: #BC5F41;
+        }
     }
 
     @media screen and (min-width: $breakpoint-md) {
