@@ -138,6 +138,8 @@
     padding: 15px 20px 15px 10px;
     margin: 10px 0;
 
+    transition: 0.4s all;
+
     &:hover {
         background-color: #2a3744;
     }
@@ -172,12 +174,22 @@
         color: var(--color-font-primary);
         font-family: var(--font-secondary);
         font-weight: bold;
+        cursor: pointer;
 
         border: none;
         border-radius: 6px;
+        transition: 0.4s all;
+
+        &:hover{
+            background-color: #BC5F41;
+        }
 
         @media screen and (min-width: $breakpoint-md) {
             padding: 10px 20px;
+        }
+
+        @media screen and (min-width: $breakpoint-xl){
+            font-size: var(--font-size-content-primary);
         }
     }
 }
@@ -208,6 +220,11 @@
     @media screen and (min-width: $breakpoint-lg) {
         padding: 160px 0 40px 70px;
     }
+
+    @media screen and (min-width: $breakpoint-xl) {
+        width: 50%;
+        padding: 160px 130px 40px 70px;
+    }
 }
 
 .reseaux {
@@ -227,6 +244,7 @@
 
         @media screen and (min-width: $breakpoint-xl) {
             font-size: var(--font-size-content-secondary);
+            margin: 5px 0 5px 15px;
         }
     }
 
@@ -237,6 +255,18 @@
         p {
             padding: 0 10px;
         }
+
+        @media screen and (min-width: $breakpoint-xl){
+            p{
+              font-size: 16px;  
+            }
+            
+            .icon {
+                margin: 0 10px;
+                height: 4em;
+                width: 4em;
+            }
+    }
     }
 
     .reseaux-sociaux {
@@ -244,6 +274,16 @@
 
         .icon {
             margin: 0 5px;
+        }
+
+        @media screen and (min-width: $breakpoint-xl){
+                margin: 120px 0 0 0;
+            
+                .icon {
+                    margin: 0 10px;
+                    height: 4em;
+                    width: 4em;
+                }
         }
     }
 
@@ -259,6 +299,11 @@
         .infos {
             margin-right: 70px;
         }
+    }
+
+    @media screen and (min-width: $breakpoint-xl) {
+        height: 395px;
+        padding: 20px 20px 20px 25px;
     }
 }
 
