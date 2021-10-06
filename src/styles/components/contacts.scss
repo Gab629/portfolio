@@ -4,9 +4,16 @@
     @media screen and (min-width: $breakpoint-md) {
         margin: 20px 30px;
         border-radius: 20px;
+        display: flex;
+        padding: 50px 0;
     }
 
-    h3 {
+    @media screen and (min-width: $breakpoint-xl) {
+        padding: 50px 0 70px 0;
+        margin: 10px 50px 0 50px;
+    }
+
+    h4 {
         font-size: 26px;
         margin: 0;
         padding: 50px 0 0 20px;
@@ -18,20 +25,24 @@
             color: var(--color-font-secondary);
             font-size: 36px;
         }
-    }
 
-    @media screen and (min-width: $breakpoint-sm) {
-        h3 {
+        @media screen and (min-width: $breakpoint-sm) {
             width: 50%;
         }
-    }
 
-    @media screen and (min-width: $breakpoint-md) {
-        display: flex;
-        padding: 0 0 50px 0;
+        @media screen and (min-width: $breakpoint-md) {
+            width: 68%;
+            padding: 50px 0 0 40px;
+        }
 
-        h3 {
-            width: 70%;
+        @media screen and (min-width: $breakpoint-lg) {
+            width: 80%;
+            font-size: var(--font-size-h4);
+            padding: 10px 0 0 60px;
+
+            span {
+                font-size: 55px;
+            }
         }
     }
 }
@@ -44,21 +55,30 @@
 
     border: none;
 
+    .textarea {
+        .input__element {
+            resize: vertical;
+        }
+    }
+
     @media screen and (min-width: $breakpoint-md) {
         flex-direction: row;
         padding: 10px 10px 30px 30px;
     }
 
-    .textarea {
-        .input__element {
-            resize: vertical;
-        }
+    @media screen and (min-width: $breakpoint-lg) {
+        padding: 10px 10px 30px 80px;
     }
 }
 
 .formulaire {
     @media screen and (min-width: $breakpoint-md) {
         width: 60%;
+    }
+
+    @media screen and (min-width: $breakpoint-xl) {
+        width: 50%;
+        margin: 0 0 0 80px;
     }
 }
 
@@ -69,6 +89,10 @@
 
 .informations .input {
     margin: 20px 0;
+
+    @media screen and (min-width: $breakpoint-lg) {
+        margin: 20px 20px 20px 0;
+    }
 }
 
 .commentaires {
@@ -79,13 +103,26 @@
             height: 240px;
         }
     }
+
+    @media screen and (min-width: $breakpoint-xl) {
+        .input__element {
+            height: 400px;
+        }
+    }
 }
 
 .input__label {
     font-family: var(--font-secondary);
     color: var(--color-font-primary);
     font-weight: bold;
-    padding: 10px;
+    padding-left: 10px;
+
+    @media screen and (min-width: $breakpoint-lg) {
+        font-size: 20px;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+        font-size: var(--font-size-content-primary);
+    }
 }
 
 .input__element {
@@ -108,27 +145,41 @@
     &:focus {
         background-color: #3f5061;
     }
+
+    @media screen and (min-width: $breakpoint-xl) {
+        font-size: 20px;
+        padding: 20px 20px 20px 10px;
+        margin: 10px 0 70px 0;
+    }
 }
 
-.button-contact {
-    padding: 15px 20px;
-    margin: 0 auto;
-    background-color: var(--color-bg-tertiary);
-    color: var(--color-font-primary);
-    font-family: var(--font-secondary);
-    font-weight: bold;
-
-    border: none;
-    border-radius: 6px;
-
-    @media screen and (min-width: $breakpoint-md) {
-        padding: 10px 20px;
+.input:nth-child(3) {
+    @media screen and (min-width: $breakpoint-xl) {
+        .input__element {
+            margin: 10px 0 0 0;
+        }
     }
 }
 
 .boutons-container {
     display: flex;
     justify-content: center;
+
+    .button-contact {
+        padding: 15px 20px;
+        margin: 0 auto;
+        background-color: var(--color-bg-tertiary);
+        color: var(--color-font-primary);
+        font-family: var(--font-secondary);
+        font-weight: bold;
+
+        border: none;
+        border-radius: 6px;
+
+        @media screen and (min-width: $breakpoint-md) {
+            padding: 10px 20px;
+        }
+    }
 }
 
 .reseaux-container {
@@ -139,11 +190,23 @@
         color: var(--color-font-secondary);
         margin: 0;
         text-align: center;
-        font-size: 18px;
+        font-size: 16px;
+
+        @media screen and (min-width: $breakpoint-lg) {
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: $breakpoint-xl) {
+            font-size: var(--font-size-content-primary);
+        }
     }
 
     @media screen and (min-width: $breakpoint-md) {
         padding: 147px 0 40px 40px;
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        padding: 160px 0 40px 70px;
     }
 }
 
@@ -161,6 +224,10 @@
         font-weight: bold;
         font-size: 18px;
         margin: 5px 0;
+
+        @media screen and (min-width: $breakpoint-xl) {
+            font-size: var(--font-size-content-secondary);
+        }
     }
 
     .information-perso {
@@ -179,10 +246,28 @@
             margin: 0 5px;
         }
     }
+
+    @media screen and (min-width: $breakpoint-md) {
+        margin: 10px 20px 40px 15px;
+
+        .infos {
+            margin-right: 50px;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        .infos {
+            margin-right: 70px;
+        }
+    }
 }
 
 .error {
     .input__element {
-        border: 3px solid var(--color-bg-tertiary);
+        box-shadow: inset 0px 0px 0px 3px var(--color-bg-tertiary);
     }
+}
+
+.copyright-contact {
+    margin: 40px 0 0 0;
 }
