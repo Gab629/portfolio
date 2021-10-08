@@ -1,22 +1,21 @@
-.single_projet {
+.defis {
     color: var(--color-font-primary);
+    background-color: var(--color-bg-secondary);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
 
-    .description_projet {
-        background-color: var(--color-bg-secondary);
-        width: 100%;
-        height: 100%;
-        padding: 20px;
-        text-align: center;
-
+    .defi {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    h2 {
+    .title_defis {
         font-family: var(--font-secondary);
-        font-size: var(--font-size-h5);
+        font-size: var(--font-size-h6);
         margin: 10px 0;
 
         @media screen and (min-width: $breakpoint-lg) {
@@ -24,7 +23,7 @@
         }
     }
 
-    .subtitle_description {
+    .subtitle_defis {
         color: var(--color-font-secondary);
         font-weight: 600;
         font-size: 22px;
@@ -35,7 +34,7 @@
         }
     }
 
-    .texte_description {
+    .texte_defis {
         width: 90%;
 
         line-height: 150%;

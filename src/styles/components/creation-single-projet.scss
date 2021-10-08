@@ -23,12 +23,13 @@
 
     .texte_creation {
         width: 90%;
-        text-align: left;
+
         line-height: 150%;
         font-size: 18px;
 
         @media screen and (min-width: $breakpoint-md) {
             width: 70%;
+            text-align: left;
         }
         @media screen and (min-width: $breakpoint-lg) {
             font-size: var(--font-size-content-primary);
