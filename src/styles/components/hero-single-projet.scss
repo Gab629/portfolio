@@ -1,0 +1,42 @@
+.single_projet{
+    color: var(--color-font-primary);
+
+    .description_projet{
+        background-color: var(--color-bg-secondary);
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    h2{
+        font-family: var(--font-secondary);
+        font-size: var(--font-size-h5);
+        margin: 10px 0;
+    }
+
+    .subtitle_description{
+        color: var(--color-font-secondary);
+        font-weight: 600;
+        font-size: 22px;
+        margin: 10px 0;
+    }
+
+    .texte_description{
+        width: 90%;
+        text-align: left;
+        line-height: 150%;
+        font-size: 18px;
+    }
+
+    .evidence {
+        color: var(--color-font-secondary);
+        font-weight: 600;
+    }
+}
