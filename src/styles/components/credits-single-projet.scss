@@ -14,6 +14,16 @@
     align-items: center;
     justify-content: center;
 
+    .subtitle_credits {
+        font-weight: 600;
+        font-size: 22px;
+        margin: 10px 0;
+
+        @media screen and (min-width: $breakpoint-md) {
+            font-size: var(--font-size-h5);
+        }
+    }
+
     .credit_list {
         display: flex;
         justify-content: center;
@@ -25,6 +35,15 @@
             list-style-type: none;
             width: 65%;
             margin: 0;
+
+            @media screen and (min-width: $breakpoint-sm) {
+                width: 50%;
+                padding: 0;
+            }
+
+            @media screen and (min-width: $breakpoint-sm) {
+                font-size: var(--font-size-content-secondary);
+            }
         }
 
         p {
@@ -36,6 +55,15 @@
             font-size: 18px;
             width: 35%;
             text-align: right;
+
+            @media screen and (min-width: $breakpoint-sm) {
+                width: 50%;
+                padding: 0 30px 0 0;
+            }
+
+            @media screen and (min-width: $breakpoint-sm) {
+                font-size: var(--font-size-content-primary);
+            }
         }
     }
 }
