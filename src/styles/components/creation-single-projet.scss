@@ -11,6 +11,10 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (min-width: $breakpoint-md) {
+        padding: 50px 20px;
+    }
+
     .title_creation {
         font-family: var(--font-secondary);
         font-size: var(--font-size-h6);

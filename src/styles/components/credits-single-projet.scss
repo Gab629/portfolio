@@ -14,6 +14,10 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (min-width: $breakpoint-md) {
+        padding: 50px 20px;
+    }
+
     .subtitle_credits {
         font-weight: 600;
         font-size: 22px;
