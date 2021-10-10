@@ -11,7 +11,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-var chemin = 'http://localhost:3000/';
+var chemin = 'https://ggauthier.dectim.ca/';
 
 if (
   document.URL == chemin + 'page-a-propos.html' ||
@@ -138,7 +138,9 @@ if (
       },
     }
   );
-} else if (document.URL == chemin + 'page-a-propos.html') {
+}
+
+if (document.URL == chemin + 'page-a-propos.html') {
   particlesJS(
     'particles-js-competences',
 
@@ -501,7 +503,9 @@ if (
       },
     }
   );
-} else if (document.URL == chemin + 'projets.html') {
+}
+
+if (document.URL == chemin + 'projets.html') {
   particlesJS(
     'particles-js-projet-1',
 
@@ -985,7 +989,9 @@ if (
       },
     }
   );
-} else if (document.URL == chemin + 'ville-nocturne.html') {
+}
+
+if (document.URL == chemin + 'ville-nocturne.html') {
   particlesJS(
     'particles-js-description-projet',
 
