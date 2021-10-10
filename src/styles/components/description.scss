@@ -8,6 +8,8 @@
     text-align: center;
     background-color: transparent;
     padding: 80px 0;
+    overflow: hidden;
+    position: relative;
 
     @media screen and (min-width: $breakpoint-md) {
         width: 100%;
@@ -21,6 +23,8 @@
 
     .wrapper {
         padding: 20px 55px 0 55px;
+        z-index: 1;
+        pointer-events: none;
 
         @media screen and (min-width: $breakpoint-md) {
             display: flex;

@@ -10,6 +10,8 @@
 
     h2 {
         font-size: 36px;
+        z-index: 1;
+        pointer-events: none;
 
         @media screen and (min-width: $breakpoint-lg) {
             font-size: var(--font-size-h2);
@@ -39,6 +41,8 @@
     }
 
     .passion {
+        z-index: 1;
+        pointer-events: none;
         padding: 30px;
 
         @media screen and (min-width: $breakpoint-md) {

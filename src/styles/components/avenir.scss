@@ -17,6 +17,8 @@
     }
 
     .avenir_texte {
+        pointer-events: none;
+        z-index: 1;
         @media screen and (min-width: $breakpoint-lg) {
             width: 60%;
             display: flex;

@@ -18,6 +18,9 @@
 
     h2 {
         font-size: 36px;
+        width: 100%;
+        z-index: 1;
+        pointer-events: none;
     }
 
     .logiciels {
@@ -31,6 +34,8 @@
 
     .logiciel {
         padding: 30px;
+        z-index: 1;
+        pointer-events: none;
 
         @media screen and (min-width: $breakpoint-md) {
             padding: 10px;
