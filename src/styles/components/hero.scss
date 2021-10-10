@@ -11,6 +11,7 @@
         text-align: center;
         z-index: 1;
         font-size: 40px;
+        pointer-events: none;
     }
 
     h3 {
@@ -19,6 +20,7 @@
         z-index: 1;
         font-size: var(--font-size-h6);
         margin-top: 10px;
+        pointer-events: none;
     }
 
     a.button {
@@ -40,8 +42,8 @@
 
         transition: 0.4s all;
 
-        &:hover{
-            background-color: #BC5F41;
+        &:hover {
+            background-color: #bc5f41;
         }
     }
 

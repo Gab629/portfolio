@@ -1,9 +1,11 @@
 .competences {
     color: var(--color-font-primary);
     text-align: center;
-    background-color: var(--color-bg-secondary);
+    background-color: transparent;
+    overflow: hidden;
     margin: 50px 0;
     padding: 20px 0;
+    position: relative;
 
     @media screen and (min-width: $breakpoint-md) {
         margin: 70px 30px;
@@ -11,7 +13,6 @@
     }
 
     @media screen and (min-width: $breakpoint-lg) {
- 
         padding: 20px 0 60px 0;
     }
 

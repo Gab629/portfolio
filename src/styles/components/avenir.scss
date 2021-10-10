@@ -2,7 +2,9 @@
     color: var(--color-font-primary);
     text-align: center;
     padding: 80px 0 80px 0;
-    background-color: var(--color-bg-secondary);
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
 
     @media screen and (min-width: $breakpoint-md) {
         margin: 70px 30px;

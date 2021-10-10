@@ -1,6 +1,8 @@
 .defis {
     color: var(--color-font-primary);
-    background-color: var(--color-bg-secondary);
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
     width: 100%;
     height: 100%;
     padding: 20px;
@@ -21,6 +23,7 @@
         font-family: var(--font-secondary);
         font-size: var(--font-size-h6);
         margin: 10px 0;
+        z-index: 1;
 
         @media screen and (min-width: $breakpoint-lg) {
             font-size: var(--font-size-h2);

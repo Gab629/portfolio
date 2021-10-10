@@ -1,4 +1,11 @@
-#particles-js {
+#particles-js,
+#particles-js-competences,
+#particles-js-passions,
+#particles-js-avenir,
+#particles-js-projet-1,
+#particles-js-projet-2,
+#particles-js-projet-3,
+#particles-js-projet-4 {
     height: 100vh;
     width: 100%;
     background-color: #363b3f;
@@ -6,26 +13,30 @@
     top: 0;
 }
 
-.descriptionGab {
-    #particles-js {
-        display: none;
-    }
+#particles-js-description-projet,
+#particles-js-creation,
+#particles-js-defis,
+#particles-js-credits {
+    width: 100%;
+    height: 100%;
+    background-color: #363b3f;
+    position: absolute;
+    top: 0;
 }
 
-.projets {
-    #particles-js {
-        display: none;
-    }
-}
-
-.contact{
-    #particles-js {
-        display: none;
-    }
-}
-
-.single_projet{
-    #particles-js {
-        display: none;
+.page-a-propos-container {
+    #particles-js,
+    #particles-js-competences,
+    #particles-js-passions,
+    #particles-js-avenir,
+    #particles-js-projet-1,
+    #particles-js-projet-2,
+    #particles-js-projet-3,
+    #particles-js-projet-4,
+    #particles-js-description-projet,
+    #particles-js-creation,
+    #particles-js-defis,
+    #particles-js-credits {
+        z-index: -1;
     }
 }
