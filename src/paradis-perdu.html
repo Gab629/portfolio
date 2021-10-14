@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&family=Work+Sans:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Ville Nocturne - Projets - Gabriel Gauthier - Portfolio</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <script src="scripts/main.js" defer></script>
+    </head>
+    <body>
+        <header class="header" data-component="Header">
+            <a href="index.html" class="header__brand">
+                <img src="assets/images/logo.png" alt="logo_gab" />
+            </a>
+
+            <nav class="nav-primary">
+                <ul>
+                    <li>
+                        <div class="liens-wrapper">
+                            <span class="animation-hover inner-wrapper">
+                                <a
+                                    href="index.html"
+                                    class="nav-primary__item animation-a"
+                                    >Accueil</a
+                                >
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liens-wrapper">
+                            <span class="animation-hover inner-wrapper">
+                                <a
+                                    href="projets.html"
+                                    class="nav-primary__item animation-a"
+                                    >Projets</a
+                                >
+                            </span>
+                        </div>
+                    </li>
+                    <li class="nav-right">
+                        <div class="liens-wrapper">
+                            <span class="animation-hover inner-wrapper">
+                                <a
+                                    href="page-a-propos.html"
+                                    class="nav-primary__item animation-a"
+                                    >À propos</a
+                                >
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liens-wrapper">
+                            <span class="animation-hover inner-wrapper">
+                                <a
+                                    href="contact.html"
+                                    class="nav-primary__item animation-a"
+                                    >Contact</a
+                                >
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__toggle js-toggle">
+                <div class="points">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="barres">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </header>
+
+        <section class="single_projet paradis-perdu">
+            <div class="description_projet">
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/paradis-perdu.png"
+                        alt="Paradis perdu"
+                    />
+                </div>
+
+                <div class="texte_container">
+                    <h2>Paradis Perdu</h2>
+                    <p class="subtitle_description">Micro-jeu 2D - Unity C#</p>
+                    <p class="texte_description">
+                        Voici un
+                        <span class="evidence">micro-jeu 2D</span> réalisé lors
+                        de ma 1e année de cégep dans le cadre de mon
+                        <span class="evidence"
+                            >cours de média intéractif II</span
+                        >
+                        à l’aide du logiciel
+                        <span class="evidence">Unity</span>. C’est le premier
+                        jeu 2D que j’ai fais et j’ai énormément appris de ce
+                        projet. J’ai dû partir de zéro et apprendre en 4 mois à
+                        créer un micro-jeu entièrement fonctionnel.
+                    </p>
+                </div>
+                <div id="particles-js-description-projet"></div>
+            </div>
+
+            <div class="creation_projet">
+                <p class="title_creation">Création du projet</p>
+
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/unity-tuiles.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        J’ai d’abord importer des assets gratuits venant du
+                        <span class="evidence">Unity Assets Store</span>, puis
+                        je les ai placés dans mes différentes scènes. Une fois
+                        mes scènes complétés, j'ai ajouté l'asset du personnage
+                        et les animations que j'ai du refaire puisqu'elles ne
+                        fonctionnaient pas. J'étais enfin prêt pour commencer à
+                        programmer.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/code-mouvement-personnage.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        J'ai d'abord commencé par programmer les mouvements du
+                        personnage, je me suis assuré que l'on puisse bien aller
+                        partout sur la scène et que l'on puisse bien utiliser
+                        les plateformes en mouvements. J'ai ajouté des ennemis
+                        dans la 2e scène et des obstacles dans la 3e scène, puis
+                        j'ai fais en sorte que l'on meurt si le joueur y touche.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/UI-jeu-2D.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Maintenant que le mouvement du personnage était
+                        fonctionnel et que les scènes avaient un niveau de
+                        difficulté plus élevé, j'ai pu aller programmer un
+                        système de score. J'ai ajouté des pièces récupérables et
+                        j'ai fais l'affichage du score sur la scène. J'ai ajouté
+                        du temps maximum pour ajouter de la difficulté.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/menu-jeu-2D.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Il ne me restait ensuite plus qu'a programmer un système
+                        de menu et de changement de scènes. J'ai fais en sorte
+                        que l'on puisse avoir accès au score du niveau prédédent
+                        lorsque l'on réussissait celui-ci. Puis, j'ai ajouté des
+                        boutons de navigation entre les scènes et une scène
+                        d'acceuil dans laquelle on peut entrer le nom du joueur.
+                        Le jeu était donc complet !
+                    </p>
+                </div>
+                <div id="particles-js-creation"></div>
+            </div>
+
+            <div class="defis">
+                <div class="defi">
+                    <p class="title_defis">Défis Techniques</p>
+                    <div class="img_container">
+                        <img
+                            class="img_description"
+                            src="assets/images/tutoriel-unity.png"
+                            alt="ville-nocturne"
+                        />
+                    </div>
+                    <div class="texte_container">
+                        <p class="subtitle_defis">Partir de zéro</p>
+                        <p class="texte_defis">
+                            Le plus grand <span class="evidence">défi</span> que
+                            j’ai rencontré lors de ce projet c’était la vitesse
+                            d'apprentissage, j'ai commencé la session en n'ayant
+                            aucunes connaissances en création de jeux vidéos.
+                            J'ai dû apprendre toutes les bases du moteur de jeu
+                            Unity et developper des méthodes de travail
+                            efficaces en très peu de temps.
+                        </p>
+                    </div>
+                </div>
+                <div class="defi">
+                    <div class="img_container">
+                        <img
+                            class="img_description"
+                            src="assets/images/apprendre-code-unity.png"
+                            alt="ville-nocturne"
+                        />
+                    </div>
+                    <div class="texte_container">
+                        <p class="subtitle_defis">La programmation</p>
+                        <p class="texte_defis">
+                            Lors de ce projet, j'ai compris exactement ce que
+                            programmer un jeu voulait dire, j'ai appris toutes
+                            les bases nécéssaire pour bouger un personnage et
+                            intéragir avec des objets. J'ai dû mettre énormément
+                            de temps et d'efforts dans la compréhension de
+                            certains bouts de code. J'ai adoré apprendre et j'ai
+                            hâte d'en savoir encore plus !
+                        </p>
+                    </div>
+                </div>
+                <div id="particles-js-defis"></div>
+            </div>
+
+            <div class="credits">
+                <p class="subtitle_credits">Crédits</p>
+                <div class="credit_list">
+                    <div class="separation_credits">Assets utilisés :</div>
+                    <ul>
+                        <li>
+                            <p>Nature pixel art base assets</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="credit_list">
+                    <div class="separation_credits">Sons :</div>
+                    <ul>
+                        <li>
+                            <p>Gabriel Gauthier</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="credit_list">
+                    <div class="separation_credits">
+                        Autres créations par moi
+                    </div>
+                    <ul>
+                        <li>
+                            <p>Pièces jaunes et rouges</p>
+                        </li>
+                        <li>
+                            <p>Ennemis</p>
+                        </li>
+                        <li>
+                            <p>Diamant et socle du diamant</p>
+                        </li>
+                        <li>
+                            <p>Bûches</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="particles-js-credits"></div>
+            </div>
+
+            <span class="evidence"></span>
+        </section>
+    </body>
+</html>
