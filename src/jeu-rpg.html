@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&family=Work+Sans:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Ville Nocturne - Projets - Gabriel Gauthier - Portfolio</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <script src="scripts/main.js" defer></script>
+    </head>
+    <body>
+        <header class="header" data-component="Header">
+            <a href="index.html" class="header__brand">
+                <img src="assets/images/logo.png" alt="logo_gab" />
+            </a>
+
+            <nav class="nav-primary">
+                <ul>
+                    <li>
+                        <div class="liens-wrapper">
+                            <span class="animation-hover inner-wrapper">
+                                <a
+                                    href="index.html"
+                                    class="nav-primary__item animation-a"
+                                    >Accueil</a
+                                >
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liens-wrapper">
+                            <span class="animation-hover inner-wrapper">
+                                <a
+                                    href="projets.html"
+                                    class="nav-primary__item animation-a"
+                                    >Projets</a
+                                >
+                            </span>
+                        </div>
+                    </li>
+                    <li class="nav-right">
+                        <div class="liens-wrapper">
+                            <span class="animation-hover inner-wrapper">
+                                <a
+                                    href="page-a-propos.html"
+                                    class="nav-primary__item animation-a"
+                                    >À propos</a
+                                >
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liens-wrapper">
+                            <span class="animation-hover inner-wrapper">
+                                <a
+                                    href="contact.html"
+                                    class="nav-primary__item animation-a"
+                                    >Contact</a
+                                >
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__toggle js-toggle">
+                <div class="points">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="barres">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </header>
+
+        <section class="single_projet paradis-perdu">
+            <div class="description_projet">
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/jeu-rpg.png"
+                        alt="Paradis perdu"
+                    />
+                </div>
+
+                <div class="texte_container">
+                    <h2>Jeu unity RPG</h2>
+                    <p class="subtitle_description">Micro-jeu 2D - Unity C#</p>
+                    <p class="texte_description">
+                        Voici un
+                        <span class="evidence">micro-jeu 2D</span> que j'ai
+                        réalisé dans le but d'acquiérir plus de connaissances en
+                        unity et en C#. C'est un projet personnel que j'ai lancé
+                        avec un de mes amis, Rémi Therrien. Nous avons décié de
+                        créer un jeu à 100% par nous-même.
+                    </p>
+                </div>
+                <div id="particles-js-description-projet"></div>
+            </div>
+
+            <div class="creation_projet">
+                <p class="title_creation">Création du projet</p>
+
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/brainstorming-jeu-2D.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Nous avons commencé par faire un brainstorming pour
+                        choisir le personnage, l'ennemi, le genre de notre jeu,
+                        l'histoire, etc. Nous avons sorti toutes les idées
+                        possibles pour gagner du temps lors de la conception du
+                        jeu. Nous écrivions des mots clés et nous mettions des
+                        images dans un document google doc ce qui facilitait le
+                        travail en équipe.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/tuiles-photoshop-jeu-2D.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Je me suis ensuite mis au travail, j'ai créer un gabarit
+                        me facilitant la tâche lorsque je créer des tuiles pour
+                        un niveau de jeu. J'ai ensuite utilisé ce gabarit pour
+                        créer un sol que l'on a mis dans notre scène pour faire
+                        une forêt. J'ai beaucoup développer mes compétences en
+                        photoshop en créant ces tuiles.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/illustrator-jeu-2D.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Nous sommes ensuite passé à la création d'un fond pour
+                        notre forêt. Après plusieurs essaie sur photoshop, nous
+                        avons décider qu'il serait préférable de créer le fond
+                        sur illustrator et ça a donné de bien meilleurs
+                        résultats. Nous travaillions chacun notre tour sur nos
+                        fichiers dans nos temps libre et nous nous les
+                        transférions à l'aide de google disque. Nous avons pris
+                        soins de séparer les couches d'arbres en plusieurs
+                        calques en révision de faire un parallax.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/knight-photoshop-jeu-2D.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Nous avons ensuite décider de créer le personnage
+                        principal, nous avons commencé par faire un brouillon
+                        très rapide sur photoshop. Puis, nous avons commencé à
+                        dessiner le contour en pixels noirs. Rémi à fait la
+                        première version, puis m'as passé le fichier et je l'ai
+                        amélioré en ajoutant des ombres, puis en refaisant le
+                        casque et le bouclier.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/golem-photoshop-jeu-2D.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Je me suis ensuite lancé dans la création du golem que
+                        j'ai fais à moi seul. J'y suis allé par le même
+                        processus en passant par le brouillon, le contour puis
+                        le final avec les ombres. Nous avons ensuite séparer
+                        toutes les parties du corps de nos deux personnages pour
+                        en faire des sprites sheets importables facilement dans
+                        unity.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/level-design-jeu-2D.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Nous avons tout transféré dans unity et puisque j'avais
+                        plus de temps libre que Rémi à ce moment-là, je me suis
+                        chargé de tout installer sur la scène. J'ai mis les
+                        tuiles, les personnages et le fond chacun sur différents
+                        layers et je les ai tous identifiés correctement. J'ai
+                        ensuite fais des animation directements dans unity pour
+                        les deux personnages afin qu'ils puissent rester sur
+                        place, marcher, courir et sauter.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/mouvement-personnage-jeu-2D.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Losque tout était prêt, nous avons entammés la
+                        programation du jeu, j'ai commencé par le déplacement du
+                        joueur, j'ai créer un charachter contrôler simple pour
+                        que le joueur puisse courir et sauter. Rémi à ajouté une
+                        méthode pour faire fliper le personnage selon sa
+                        direction. Nous avons aussi fait jouer les animations
+                        aux bons moments selon l'action du joueur.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/parralax-jeu-2D.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Puis, Rémi à commencé à programmer le parallax pour le
+                        fond de la forêt, nous avons suivis le tutoriel de Dani
+                        sur youtube, mais Rémi à rencontré un problème que j'ai
+                        réussi à régler par la suite. Nous avons fait en sorte
+                        que le background se répète à l'infini donc moins de
+                        travail au niveau du design de niveau.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/barre-vie-jeu-2D.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Puis, Rémi à programmé une barre de vie que j'ai
+                        moi-même dessiné sur photoshop pour que notre personnage
+                        puisse mourir lorsqu'il touche le golem. Nous l'avons
+                        mise dans un canvas et positionner dans notre scène. La
+                        couleur de la vie change par programmation lorsque
+                        celle-ci diminue.
+                    </p>
+                </div>
+
+                <div id="particles-js-creation"></div>
+            </div>
+
+            <div class="defis">
+                <div class="defi">
+                    <p class="title_defis">Défis Techniques</p>
+                    <div class="img_container">
+                        <img
+                            class="img_description"
+                            src="assets/images/github-unity.png"
+                            alt="ville-nocturne"
+                        />
+                    </div>
+                    <div class="texte_container">
+                        <p class="subtitle_defis">Travailler en équipe</p>
+                        <p class="texte_defis">
+                            Une des difficultées du
+                            <span class="evidence">projet</span> a été
+                            d'apprendre à travailler en équipe sur un même
+                            projet, nous avons appris par nous-même à utiliser
+                            github desktop avec unity et nous nous sommes
+                            entendu sur des méthodes de travail afin d'être plus
+                            efficace. Il nous a fallu beaucoup d'ajustements
+                            pour pervenir à travailler rapidement et sans causer
+                            de problèmes lors de nos commits sur github.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="defi">
+                    <div class="img_container">
+                        <img
+                            class="img_description"
+                            src="assets/images/trello-unity.png"
+                            alt="ville-nocturne"
+                        />
+                    </div>
+                    <div class="texte_container">
+                        <p class="subtitle_defis">Gérer notre temps</p>
+                        <p class="texte_defis">
+                            Nous avons commencé à créer ce projet dans nos temps
+                            libres en même temps d'être à l'école. Nous avions
+                            beaucoup de mal à trouver le temps nécéssaire pour
+                            faire avancer le projet. Nous avons créer un trello
+                            pour essayer de bien organiser nos tâches lorsque
+                            nous mettions du temps chacun de notre côté, mais le
+                            trello ne fut pas très utile. Lorsque nous avons
+                            finis notre session, nous avons commencé à
+                            travailler quelques soirs par semaine après le
+                            travail, malheureusement la fatigue ralentissait
+                            l'avancement du projet. Nous n'avons malheureusement
+                            pas eu le temps d'avancer le jeu autant que nous
+                            l'aurions voulu.
+                        </p>
+                    </div>
+                </div>
+                <div id="particles-js-defis"></div>
+            </div>
+
+            <div class="credits">
+                <p class="subtitle_credits">Crédits</p>
+                <div class="credit_list">
+                    <div class="separation_credits">Rémi Therrien :</div>
+                    <ul>
+                        <li>
+                            <p>- Fond de la forêt</p>
+                        </li>
+                        <li>
+                            <p>- Chevalier version 1</p>
+                        </li>
+                        <li>
+                            <p>- Barre de vie (programation)</p>
+                        </li>
+                        <li>
+                            <p>- Parallax (programation)</p>
+                        </li>
+                        <li>
+                            <p>- Méthode flip de personnage (programation)</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="credit_list">
+                    <div class="separation_credits">Gabriel Gauthier</div>
+                    <ul>
+                        <li>
+                            <p>- Amélioration du fond de la forêt</p>
+                        </li>
+                        <li>
+                            <p>- Amélioration du chevalier</p>
+                        </li>
+                        <li>
+                            <p>- Création du golem</p>
+                        </li>
+                        <li>
+                            <p>- Création des tuiles</p>
+                        </li>
+                        <li>
+                            <p>- Réglage de bug du parallax</p>
+                        </li>
+                        <li>
+                            <p>
+                                - Mouvements et animations des personnages
+                                (programation et unity)
+                            </p>
+                        </li>
+                        <li>
+                            <p>- Design du niveau sur unity</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="particles-js-credits"></div>
+            </div>
+
+            <span class="evidence"></span>
+        </section>
+    </body>
+</html>
