@@ -35,7 +35,7 @@
         }
 
         @media screen and (min-width: $breakpoint-md) {
-            width: 68%;
+            width: 63%;
             padding: 50px 0 0 40px;
         }
 
@@ -364,6 +364,57 @@
 .error {
     .input__element {
         box-shadow: inset 0px 0px 0px 3px var(--color-bg-tertiary);
+    }
+}
+
+.form_confirmation {
+    display: none;
+    background-color: var(--color-bg-primary);
+    color: var(--color-font-primary);
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 30px 10px;
+    margin: 50px 20px 0 20px;
+    border-radius: 6px;
+    pointer-events: none;
+    z-index: 1;
+
+    .title_confirmation {
+        font-size: var(--font-size-h6);
+        font-weight: 600;
+        color: var(--color-font-secondary);
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        margin: 55px 20px 0 5%;
+        height: 240px;
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+        margin: 65px 20px 0 15%;
+    }
+    @media screen and (min-width: $breakpoint-xl) {
+        height: 395px;
+        margin: 65px 20px 0 15%;
+
+        font-size: 16px;
+
+        .title_confirmation {
+            font-size: var(--font-size-h4);
+            margin: 0;
+        }
+    }
+}
+
+.is-sent {
+    .form_confirmation {
+        display: flex;
+    }
+
+    .form-container,
+    .boutons-container {
+        display: none;
     }
 }
 
