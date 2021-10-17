@@ -1004,10 +1004,10 @@ if (
     {
       particles: {
         number: {
-          value: 80,
+          value: 40,
           density: {
             enable: true,
-            value_area: 800,
+            value_area: 700,
           },
         },
         color: {
@@ -1124,10 +1124,10 @@ if (
     {
       particles: {
         number: {
-          value: 80,
+          value: 40,
           density: {
             enable: true,
-            value_area: 800,
+            value_area: 700,
           },
         },
         color: {
@@ -1245,7 +1245,7 @@ if (
     {
       particles: {
         number: {
-          value: 80,
+          value: 40,
           density: {
             enable: true,
             value_area: 800,
