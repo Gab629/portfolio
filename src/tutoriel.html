@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&family=Work+Sans:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Ville Nocturne - Projets - Gabriel Gauthier - Portfolio</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <script src="scripts/main.js" defer></script>
+    </head>
+    <body>
+        <header class="header" data-component="Header">
+            <a href="index.html" class="header__brand">
+                <img src="assets/images/logo.png" alt="logo_gab" />
+            </a>
+
+            <nav class="nav-primary">
+                <ul>
+                    <li>
+                        <div class="liens-wrapper">
+                            <span class="animation-hover inner-wrapper">
+                                <a
+                                    href="index.html"
+                                    class="nav-primary__item animation-a"
+                                    >Accueil</a
+                                >
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liens-wrapper">
+                            <span class="animation-hover inner-wrapper">
+                                <a
+                                    href="projets.html"
+                                    class="nav-primary__item animation-a"
+                                    >Projets</a
+                                >
+                            </span>
+                        </div>
+                    </li>
+                    <li class="nav-right">
+                        <div class="liens-wrapper">
+                            <span class="animation-hover inner-wrapper">
+                                <a
+                                    href="page-a-propos.html"
+                                    class="nav-primary__item animation-a"
+                                    >À propos</a
+                                >
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liens-wrapper">
+                            <span class="animation-hover inner-wrapper">
+                                <a
+                                    href="contact.html"
+                                    class="nav-primary__item animation-a"
+                                    >Contact</a
+                                >
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__toggle js-toggle">
+                <div class="points">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="barres">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </header>
+
+        <section class="single_projet paradis-perdu">
+            <div class="description_projet">
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/tutoriel-titre.png"
+                        alt="Paradis perdu"
+                    />
+                </div>
+
+                <div class="texte_container">
+                    <h2>Dessiner avec des particules</h2>
+                    <p class="subtitle_description">Tutoriel - TouchDesigner</p>
+                    <p class="texte_description">
+                        Voici un tutoriel complet que j’ai réalisé dans le cadre
+                        de mon
+                        <span class="evidence"
+                            >cours de média interactif IV</span
+                        >. J’ai fais les explications et le montage vidéo
+                        <span class="evidence">(Audition, Adobe premiere)</span>
+                        afin de démontrer mes
+                        <span class="evidence">capacités de compréhension </span
+                        >d’un nouveau logiciel. J'apprenais à utiliser le
+                        logiciel TouchDesigner lorsque j'ai fais ce tutoriel
+                        afin d'augmenter mes connaissances.
+                    </p>
+                </div>
+                <div id="particles-js-description-projet"></div>
+            </div>
+
+            <div class="creation_projet">
+                <p class="title_creation">Création du projet</p>
+
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/particules-touchdesigner.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        J’ai d’abord créer des particules à l'aide d'un
+                        composant add et d'un composant convert. J'ai ensuite
+                        mis mes particules dans un composant géométrie et j'ai
+                        fais le rendu de celui-ci à l'aide d'un composant
+                        caméra. J'ai ensuite utilisé un composant constant qui
+                        sert à ajouter une texture à nos particules.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/grille-noise-touchdesigner.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Ensuite, j'ai créer du bruit avec un composant noise
+                        afin de faire bouger mes particules. J'ai ensuite créer
+                        une grille dans laquelle j'instancie mes particules afin
+                        d'en avoir un grand nombre. J'ajoute ensuite un
+                        composant feedback qui va venir ajouter un effet de flou
+                        aux particules. Je fais ensuite un lien entre notre
+                        géométrie et notre grille en mouvement.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/ajout-image-touchdesigner.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Je viens ensuite ajouter l'image de mon choix dans mon
+                        projet à l'aide d'un composant moviefilein. Je réduis
+                        ensuite le vide autour de mon image en utilisant un
+                        composant fit et je viens insérer mon image dans ma
+                        géométrie. Je finalise en utilisant un composant reorder
+                        pour enlever le fond noir de l'image.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/particules-dessinent-touchdesigner.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Je vais maintenant venir faire en sorte que mes
+                        particules donnent l'impression de dessiner mon image en
+                        laissant une trainée derrière elles. J'utilise un autre
+                        composant feedback et un componant composite pour
+                        réaliser cet effet.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/effet-particules-touchdesigner.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        J'ai finalisé le tout en ajoutant un effet de changement
+                        de couleur à mon image pour lui donner un peu plus de
+                        variation. J'utilise un composant solarize pour
+                        appliquer l'effet, puis j'ajuste le temps de cet effet à
+                        l'aide d'un composant timeline et d'un composant math.
+                        J'ajoute un composant out pour signifier la sortie de
+                        mon projet pour l'exportation.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/adobe-premiere-tutoriel.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Après avoir créer mon projet au complet avec l'effet
+                        désiré, j'ai pu commencer à faire mon tutoriel. J'avais
+                        filmé bouts par bouts chaque étapes de mon projet afin
+                        de garder une vitesse de travail claire et constante.
+                        J'ai ensuite mis toutes les vidéos ensemble sur adobe
+                        premiere pro pour faire une seule grosse vidéo.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/adobe-audition-tutoriel.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Après avoir créer ma vidéo, je l'ai importé dans adobe
+                        auditionpour enregistrer les explications de mon projet.
+                        J'ai expliqué chaque étapes le plus clairement possible
+                        et j'ai fais attention à ne pas aller trop rapidement.
+                        J'ai finalement ajouté une musique de fond créée par mon
+                        ami qui m'avait donné les droits et j'ai mis la vidéo
+                        sur youtube.
+                    </p>
+                </div>
+                <div id="particles-js-creation"></div>
+            </div>
+
+            <div class="defis">
+                <div class="defi">
+                    <p class="title_defis">Défis Techniques</p>
+                    <div class="img_container">
+                        <img
+                            class="img_description"
+                            src="assets/images/reseau-complet-touchdesigner.png"
+                            alt="ville-nocturne"
+                        />
+                    </div>
+                    <div class="texte_container">
+                        <p class="subtitle_defis">Apprendre les composants</p>
+                        <p class="texte_defis">
+                            Le plus grand <span class="evidence">défi</span> que
+                            j’ai rencontré lors de ce projet c’était d'apprendre
+                            le rôle de chacun des composants que j'ai utilisé
+                            pour obtenir le résultat final. J'ai dû faire
+                            beaucoup de recherches pour les apprendre et bien
+                            les expliquer lors de mon tutoriel.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="defi">
+                    <div class="img_container">
+                        <img
+                            class="img_description"
+                            src="assets/images/test-tutoriel-touchdesigner.png"
+                            alt="ville-nocturne"
+                        />
+                    </div>
+                    <div class="texte_container">
+                        <p class="subtitle_defis">
+                            Apprendre à utiliser TouchDesigner
+                        </p>
+                        <p class="texte_defis">
+                            J'ai fais ce tutoriel alors que je n'étais pas du
+                            tout familié avec le logiciel. J'ai dû faire
+                            énormément de tests avant de faire le tutoriel pour
+                            bien comprendre comment bien utiliser le logiciel et
+                            quelles sont les bonnes méthodes de travail.
+                        </p>
+                    </div>
+                </div>
+                <div id="particles-js-defis"></div>
+            </div>
+
+            <div class="credits">
+                <p class="subtitle_credits">Crédits</p>
+                <div class="credit_list">
+                    <div class="separation_credits">Tutoriel original</div>
+                    <ul>
+                        <li>
+                            <p>
+                                <a
+                                    href="https://www.youtube.com/watch?v=hZRZqBKLoUg"
+                                    target="blank"
+                                    >Drawing with particles (Touchdesigner
+                                    tutorial)</a
+                                >
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="credit_list">
+                    <div class="separation_credits">Musique</div>
+                    <ul>
+                        <li>
+                            <p>
+                                <a
+                                    href="https://soundcloud.com/wavykid1/lofi-connection"
+                                    target="blank"
+                                >
+                                    Antwan Fenelus - LoFi Connection</a
+                                >
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="particles-js-credits"></div>
+            </div>
+
+            <span class="evidence"></span>
+        </section>
+    </body>
+</html>
