@@ -5,7 +5,7 @@ header {
     padding: 5px 15px;
     width: 100%;
     z-index: 10;
-    position: sticky; // Sert à coller le nav dans le haut de l'écran
+    position: fixed; // Sert à coller le nav dans le haut de l'écran
     top: 0;
     left: 0;
     transition: all 0.4s;
