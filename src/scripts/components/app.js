@@ -27,7 +27,7 @@ if (
           value: 80,
           density: {
             enable: true,
-            value_area: 800,
+            value_area: 900,
           },
         },
         color: {
@@ -1007,7 +1007,7 @@ if (
           value: 40,
           density: {
             enable: true,
-            value_area: 700,
+            value_area: 600,
           },
         },
         color: {
@@ -1050,14 +1050,14 @@ if (
         },
         line_linked: {
           enable: true,
-          distance: 150,
+          distance: 130,
           color: '#ffffff',
           opacity: 0.4,
           width: 1,
         },
         move: {
           enable: true,
-          speed: 2,
+          speed: 0,
           direction: 'none',
           random: false,
           straight: false,
@@ -1114,7 +1114,7 @@ if (
         background_image: '',
         background_position: '50% 50%',
         background_repeat: 'no-repeat',
-        background_size: 'cover',
+        background_size: '100%',
       },
     }
   );
@@ -1127,7 +1127,7 @@ if (
           value: 40,
           density: {
             enable: true,
-            value_area: 700,
+            value_area: 800,
           },
         },
         color: {
