@@ -1,9 +1,8 @@
-.projets{
+.projets {
     margin-top: 80px;
-    @media screen and (min-width: $breakpoint-md){
+    @media screen and (min-width: $breakpoint-md) {
         margin-top: 100px;
     }
-    
 }
 
 .projet {

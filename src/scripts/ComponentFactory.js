@@ -3,6 +3,7 @@ import Scrolly from './components/Scrolly';
 import Form from './components/Form';
 import particles from './components/particles';
 import app from './components/app';
+import Video from './components/Video';
 
 export default class ComponentFactory {
   constructor() {
@@ -13,6 +14,7 @@ export default class ComponentFactory {
       Form,
       particles,
       app,
+      Video,
     };
     this.init();
   }
