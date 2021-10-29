@@ -1,3 +1,10 @@
+<?php
+            if($_POST["message"]) {
+            mail("gab.gauthier2002@gmail.com", "Portfolio",
+            $_POST["insert your message here"]. "From: an@email.address");
+            }
+            ?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -86,7 +93,13 @@
         </header>
 
         <section class="contact">
-            <form class="formulaire" autocomplete="off" data-component="Form">
+            <form
+                method="post"
+                action="subscriberform.php"
+                class="formulaire"
+                autocomplete="off"
+                data-component="Form"
+            >
                 <h4>Donnons notre maximum <span>ensemble</span></h4>
 
                 <div class="form__body">
@@ -170,17 +183,19 @@
                     <div class="infos">
                         <p class="nom">Gabriel Gauthier</p>
 
-                        <div class="information-perso" >
-                           
+                        <div class="information-perso">
                             <div class="icon">
-                                 <a href="mailto:gab.gauthier2002@gmail.com"><img src="assets/icons/Email.svg" alt="" /></a>
+                                <a href="mailto:gab.gauthier2002@gmail.com"
+                                    ><img src="assets/icons/Email.svg" alt=""
+                                /></a>
                             </div>
                             <p>gab.gauthier2002@gmail.com</p>
-                        
                         </div>
                         <div class="information-perso">
                             <div class="icon">
-                                <a href="tel:514-605-6290"><img src="assets/icons/Phone.svg" alt="" /></a>
+                                <a href="tel:514-605-6290"
+                                    ><img src="assets/icons/Phone.svg" alt=""
+                                /></a>
                             </div>
                             <p>514-605-6290</p>
                         </div>

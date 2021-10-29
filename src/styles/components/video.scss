@@ -23,6 +23,8 @@
         align-items: center;
         justify-content: center;
         z-index: 1;
+
+        padding: 0 30px;
     }
 
     img {
@@ -30,6 +32,7 @@
         width: 90%;
         border-radius: 20px;
         z-index: 1;
+        object-fit: cover;
     }
 
     .jouer {
@@ -37,20 +40,26 @@
         background-color: var(--color-bg-tertiary);
         padding: 20px 30px;
 
-        font-size: var(--font-size-h4);
+        font-size: var(--font-size-content-primary);
         font-family: var(--font-primary);
         font-weight: 700;
         border-radius: 10px;
 
         opacity: 0;
         position: absolute;
-        top: 55%;
+        top: 70%;
         left: 50%;
 
         transform: translate(-50%, -50%);
         transition: 0.4s all;
         cursor: pointer;
         z-index: 2;
+
+        text-align: center;
+
+        @media screen and (min-width: $breakpoint-md) {
+            font-size: var(--font-size-h4);
+        }
 
         .is-video-ready & {
             opacity: 1;
