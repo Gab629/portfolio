@@ -1,10 +1,3 @@
-<?php
-            if($_POST["message"]) {
-            mail("gab.gauthier2002@gmail.com", "Portfolio",
-            $_POST["insert your message here"]. "From: an@email.address");
-            }
-            ?>
-
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -94,9 +87,10 @@
 
         <section class="contact">
             <form
-                method="post"
-                action="subscriberform.php"
+                method="get"
+                action="message.php"
                 class="formulaire"
+                id="formulaire"
                 autocomplete="off"
                 data-component="Form"
             >
@@ -166,8 +160,12 @@
                         </div>
                     </fieldset>
 
-                    <div class="boutons-container">
+                    <!-- <div class="boutons-container">
                         <button class="button-contact">Envoyer</button>
+                    </div> -->
+
+                    <div class="boutons-container">
+                        <input type="submit" class="button-contact"></input>
                     </div>
 
                     <div class="form_confirmation">

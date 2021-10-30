@@ -16,6 +16,10 @@ export default class form {
   init() {
     this.element.setAttribute('novalidate', '');
 
+    if (window.name == 'envoye') {
+      this.showConfirmation();
+    }
+
     for (let i = 0; i < this.formElements.length; i++) {
       const input = this.formElements[i];
 
@@ -28,40 +32,22 @@ export default class form {
   }
 
   onSubmit(event) {
+    this.isSent = false;
     event.preventDefault();
 
     if (this.validate()) {
       console.log('succes');
+      document.getElementById('formulaire').submit();
+      this.isSent = true;
+      if (this.isSent == true) {
+        window.name = 'envoye';
+      }
       // envoie ajax du formulaire
 
       this.showConfirmation();
     } else {
       console.log('error');
     }
-
-    let xhr = new XMLHttpRequest();
-    xhr.open('POST', 'message.php', true);
-    xhr.onload = () => {
-      if (xhr.readyState == 4 && xhr.status == 200) {
-        let response = xhr.response;
-        if (
-          response.indexOf('required') != -1 ||
-          response.indexOf('valid') != -1 ||
-          response.indexOf('failed') != -1
-        ) {
-          statusTxt.style.color = 'red';
-        } else {
-          form.reset();
-          setTimeout(() => {
-            statusTxt.style.display = 'none';
-          }, 3000);
-        }
-        statusTxt.innerText = response;
-        form.classList.remove('disabled');
-      }
-    };
-    let formData = new FormData(form);
-    xhr.send(formData);
   }
 
   /**
