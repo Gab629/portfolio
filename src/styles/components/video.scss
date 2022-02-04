@@ -70,3 +70,110 @@
         }
     }
 }
+
+.videoContainerSingle {
+    background-color: transparent;
+    padding: 50px 0;
+    margin-bottom: 100px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        padding: 0 0 50px 0;
+    }
+
+    .video {
+        height: 30vh !important;
+        width: 90vw !important;
+        border-radius: 20px;
+        z-index: 1;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            height: 40vh !important;
+            width: 90vw !important;
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            height: 60vh !important;
+            width: 90vw !important;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            height: 70vh !important;
+            width: 70vw !important;
+        }
+    }
+
+    iframe {
+        z-index: 1;
+    }
+
+    .video__media {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+
+        padding: 0 30px;
+        cursor: pointer;
+    }
+
+    .js-poster {
+        transition: 0.5s filter;
+
+        &:hover {
+            filter: grayscale(1);
+        }
+    }
+
+    img {
+        height: 100%;
+        width: 90%;
+        border-radius: 20px;
+        z-index: 1;
+        object-fit: cover;
+    }
+
+    .jouer {
+        object-fit: contain;
+        background-color: var(--color-bg-tertiary);
+        padding: 10px 20px;
+
+        font-size: var(--font-primary);
+        font-family: var(--font-primary);
+        font-weight: 700;
+        border-radius: 10px;
+
+        opacity: 0;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        transition: 0.4s all;
+        cursor: pointer;
+        z-index: 2;
+
+        text-align: center;
+
+        @media screen and (min-width: $breakpoint-md) {
+            font-size: var(--font-size-h6);
+            padding: 20px 30px;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            font-size: var(--font-size-h4);
+            padding: 20px 30px;
+        }
+
+        .is-video-ready & {
+            opacity: 1;
+        }
+
+        &:hover {
+            background-color: #bc5f41;
+        }
+    }
+}
