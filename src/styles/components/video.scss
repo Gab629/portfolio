@@ -121,10 +121,10 @@
     }
 
     .js-poster {
-        transition: 0.5s filter;
+        transition: 0.5s all;
 
         &:hover {
-            filter: grayscale(1);
+            transform: scale(1.01);
         }
     }
 
