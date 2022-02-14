@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&family=Work+Sans:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+       
+        <title>Megalophobia - Projets - Gabriel Gauthier - Portfolio</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <header class="header" data-component="Header">
+            <a href="index.html" class="header__brand">
+                <img src="assets/images/logo.png" alt="logo_gab" />
+            </a>
+
+            <nav class="nav-primary">
+                <ul>
+                    <li>
+                        <div class="liens-wrapper">
+                            <span class="animation-hover inner-wrapper">
+                                <a
+                                    href="index.html"
+                                    class="nav-primary__item animation-a"
+                                    >Accueil</a
+                                >
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liens-wrapper">
+                            <span class="animation-hover inner-wrapper">
+                                <a
+                                    href="projets.html"
+                                    class="nav-primary__item animation-a"
+                                    >Projets</a
+                                >
+                            </span>
+                        </div>
+                    </li>
+                    <li class="nav-right">
+                        <div class="liens-wrapper">
+                            <span class="animation-hover inner-wrapper">
+                                <a
+                                    href="page-a-propos.html"
+                                    class="nav-primary__item animation-a"
+                                    >À propos</a
+                                >
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="liens-wrapper">
+                            <span class="animation-hover inner-wrapper">
+                                <a
+                                    href="contact.html"
+                                    class="nav-primary__item animation-a"
+                                    >Contact</a
+                                >
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__toggle js-toggle">
+                <div class="points">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="barres">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </header>
+
+         
+        <section class="single_projet paradis-perdu">
+            <div class="description_projet">
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/ville-nocturne.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+
+                <div class="texte_container">
+                    <h2>Megalophobia</h2>
+                    <p class="subtitle_description">
+                        Jeu d'horreur en 3D - Unity C#
+                    </p>
+                    <p class="texte_description">
+                        Megalophobia est un jeu d'horreur à la première personne ou le joueur se réveille sur un plage en plein milieu de la nuit. 
+                        Il fait froid et il n'y a aucun signes de vie humaine à l'exception de feux de camps éparpillés un peu partout. Le but est de s'aventurer dans la forêt pour tuer le monstre qui hante ces lieux.
+                    </p>
+                </div>
+                <div id="particles-js"></div>
+            </div>
+
+            <div class="creation_projet">
+                <p class="title_creation">Création du projet</p>
+
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/brainstorm_livraison.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Tout d'abord, comme pour tous les bons projets de ce monde, nous avons commencé avec un brainstorming sur des concepts de jeux, des mécaniques que l'on pourrait implémenter, etc. 
+                        Nous avons finalement décidé de jumeler plusieurs de nos idées en une seule afin de faire un jeu qui allait être faisable en 3 jours et amusant à jouer. 
+                        Nous y sommes allé avec un jeu d'horreur ou le joueur doit tuer un monstre rôdant dans la forêt.
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/code_livraison.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        On voulait créer un jeu qui allait faire stressé le joueur et lui donner cette petite dose d'adrénaline que les fans de jeux d'horreur aiment tant. 
+                        Nous avons donc décider que des petits monstres se promèneraient partout et crieraient lorsqu'ils seraient assez près du joueur afin d'alerter le gros monstre. 
+                        Et ce gros monstre justement, nous l'avons mis énorme et dégoutant ! Les sons sont plus terribles les uns que les autres pour une ambiance stressante le plus possible ! 
+                        
+                    </p>
+                </div>
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/input_system_livraison.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Mon rôle était la programation c#, je m'occupais principalement des intelligence artifielles du gros monstre et des petites araignées avec leus animations. 
+                        J'ai aussi programmer l'intéraction avec les balles que l'on trouve et les feux de camps pour rallumer notre torche (toute la mécanique de la lumière). 
+                        Je me suis chargé de faire afficher les bons textes lorsque l'on peut interagir avec des objets et j'ai gérer majoritairement tout ce qui était de l'input system de unity.
+                    </p>
+                </div>
+                
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/unity_livraison.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Nous avions un prototype de menu fonctionnel, mais très peu estéthique, j'ai donc été créer un design de menu qui allait mieux avec toute l'estéthique de notre jeu. 
+                        J'ai choisi une font adapté à ce qu'on recherchais et j'ai dessiner les boutons des interfaces utilisateurs avec un peu d'aide de mon amie qui s'y connait bien en dessin. 
+                        J'ai ensuite tout intégrer moi-même dans unity et j'ai ajouté une section pour les crédits.
+                    </p>
+                </div>
+
+                <div class="img_container">
+                    <img
+                        class="img_description"
+                        src="assets/images/fin_livraison.png"
+                        alt="ville-nocturne"
+                    />
+                </div>
+                <div class="texte_container">
+                    <p class="texte_creation">
+                        Nous arrivions à la fin de notre game jam, j'ai dû régler quelques bugs et nous avons publié notre jeu sur itch.io pour qu'il soit jouable par navigateur. 
+                        Nous avons reçus beaucoup de commentaires sur notre jeu et vraiment, c'était des commentaires instructifs et super plaisants. J'ai beaucoup appris de ce game jam et j'ai hâte d'en refaire d'autres !
+                    </p>
+                </div>
+                
+            </div>
+
+            <div class="defis">
+                <div class="defi">
+                    <p class="title_defis">Défis Techniques</p>
+                    <div class="img_container">
+                        <img
+                            class="img_description"
+                            src="assets/images/taches_livraison.png"
+                            alt="ville-nocturne"
+                        />
+                    </div>
+                    <div class="texte_container">
+                        <p class="subtitle_defis">Réglage de bugs</p>
+                        <p class="texte_defis">
+                            Tout au long de notre jeu nous avons rencontré des dizaines et des dizaines de bugs. 
+                            Certaine fois nous avons dû mettre beaucoup de temps et lire des tonnes de documentation afin d'arriver à les régler. 
+                            Ça a été un gros défi tout au long du game jam, mais j'ai tellement appris de chose en le faisant qu'au final, je suis heureux d'avoir rencontré tous ces problèmes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="defi">
+                    <div class="img_container">
+                        <img
+                            class="img_description"
+                            src="assets/images/2.5D_livraison.png"
+                            alt="ville-nocturne"
+                        />
+                    </div>
+                    <div class="texte_container">
+                        <p class="subtitle_defis">L'intelligence artificielle'</p>
+                        <p class="texte_defis">
+                            N'ayant jamais fait d'intelligence artificielle auparavant, je me suis lancé dans le projet de faire deux ennemis ayant des réactions le plus réalistique possible pour notre jeu. 
+                            J'ai dû lire des tonnes de documentations et regarder plein de vidéos afin d'apprendre à faire mes AI de la façon la plus efficace possible. 
+                            J'ai finalement réussi à faire fonctionner nos ennemis avec une bonne fluidité de mouvement et le programmeur le plus expérimenté de notre équipe est venu améliorer encore plus mon code.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+
+                
+            </div>
+
+            <div class="credits">
+                <p class="subtitle_credits">Crédits</p>
+                <div class="credit_list">
+                    <div class="separation_credits">Programmeurs :</div>
+                    <ul>
+                        <li>
+                            <p>Mathieu-Daniel Gariépy</p>
+                        </li>
+                        <li>
+                            <p>Marc-André Jalbert-Blais</p>
+                        </li>
+                        <li>
+                            <p>Gabriel Gauthier</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="credit_list">
+                    <div class="separation_credits">
+                        Modélisateurs 3D : 
+                    </div>
+                    <ul>
+                        <li>
+                            <p>Jean-Marie Gariépy</p>
+                        </li>
+                        <li>
+                            <p>Audrey Langlois</p>
+                        </li>
+                       
+                    </ul>
+                </div>
+                <div class="credit_list">
+                    <div class="separation_credits">
+                        Animateur 3D : 
+                    </div>
+                    <ul>
+                        <li>
+                            <p>Jean-Marie Gariépy</p>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="credit_list">
+                    <div class="separation_credits">
+                        Programation et design UI : 
+                    </div>
+                    <ul>
+                        <li>
+                            <p>Marc-André Jalbert-Blais</p>
+                        </li>
+                        <li>
+                            <p>Gabriel Gauthier</p>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="credit_list">
+                    <div class="separation_credits">
+                        Level design : 
+                    </div>
+                    <ul> 
+                        <li>
+                            <p>Audrey Langlois</p>
+                        </li>
+                        <li>
+                            <p>Gabriel Gauthier</p>
+                        </li>
+                       
+                       
+                    </ul>
+                </div>
+                <div class="credit_list">
+                    <div class="separation_credits">
+                        Design sonore : 
+                    </div>
+                    <ul>
+                        <li>
+                            <p>Jean-Marie Gariépy</p>
+                        </li>
+                        <li>
+                            <p>Nous avons aussi utilisés des son libres de droits en ligne</p>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+
+            <span class="evidence"></span>
+        </section>
+    </body>
+</html>
