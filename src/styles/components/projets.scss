@@ -108,7 +108,7 @@
             background-image: url(/assets/images/thumbnail_megalophobia.png);
             background-position-x: 60%;
             background-position-y: 30%;
-            background-size: 100%;
+            background-size: cover;
         }
     }
     &:nth-child(2) {
@@ -116,7 +116,7 @@
             background-image: url(/assets/images/livraison_royal_poster.png);
             background-position-x: 50%;
             background-position-y: 45%;
-            background-size: 160%;
+            background-size: cover;
         }
     }
     &:nth-child(3) {
@@ -124,7 +124,7 @@
             background-image: url(/assets/images/cimeterium.png);
             background-position-x: 50%;
             background-position-y: 45%;
-            background-size: 100%;
+            background-size: cover;
         }
     }
     &:nth-child(4) {
