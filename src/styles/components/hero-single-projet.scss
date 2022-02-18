@@ -96,6 +96,21 @@
         }
     }
 
+    .jouerJeu {
+        background-color: var(--color-bg-tertiary);
+        padding: 20px 30px;
+        border-radius: 10px;
+        transition: 0.4s all;
+
+        @media screen and (min-width: $breakpoint-md) {
+            font-size: var(--font-size-content-primary);
+        }
+
+        &:hover {
+            background-color: #bc5f41;
+        }
+    }
+
     .evidence {
         color: var(--color-font-secondary);
         font-weight: 600;
