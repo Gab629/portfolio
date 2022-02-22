@@ -323,7 +323,7 @@
                 opacity: 0;
                 margin-top: 0;
                 font-weight: bold;
-                color: var(--color-font-secondary);
+                color: var(--color-font-primary);
             }
 
             &:hover {
@@ -333,7 +333,6 @@
 
                 p {
                     opacity: 100;
-                    color: var(--color-font-primary);
                 }
             }
         }
