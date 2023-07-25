@@ -105,7 +105,7 @@
 
     &:nth-child(1) {
         .img_projet {
-            background-image: url(/assets/images/thumbnail_hunting.png);
+            background-image: url(/assets/images/NineOClockThumbnail.png);
             background-position-x: 60%;
             background-position-y: 30%;
             background-size: cover;
@@ -113,7 +113,7 @@
     }
     &:nth-child(2) {
         .img_projet {
-            background-image: url(/assets/images/thumbnail_megalophobia.png);
+            background-image: url(/assets/images/latency.png);
             background-position-x: 60%;
             background-position-y: 30%;
             background-size: cover;
@@ -121,13 +121,29 @@
     }
     &:nth-child(3) {
         .img_projet {
+            background-image: url(/assets/images/thumbnail_hunting.png);
+            background-position-x: 60%;
+            background-position-y: 30%;
+            background-size: cover;
+        }
+    }
+    &:nth-child(4) {
+        .img_projet {
+            background-image: url(/assets/images/thumbnail_megalophobia.png);
+            background-position-x: 60%;
+            background-position-y: 30%;
+            background-size: cover;
+        }
+    }
+    &:nth-child(5) {
+        .img_projet {
             background-image: url(/assets/images/livraison_royal_poster.png);
             background-position-x: 50%;
             background-position-y: 45%;
             background-size: cover;
         }
     }
-    &:nth-child(4) {
+    &:nth-child(6) {
         .img_projet {
             background-image: url(/assets/images/cimeterium.png);
             background-position-x: 50%;
@@ -135,28 +151,28 @@
             background-size: cover;
         }
     }
-    &:nth-child(5) {
+    &:nth-child(7) {
         .img_projet {
             background-image: url(/assets/images/ville-nocturne.png);
             background-position-x: 15%;
             background-size: cover;
         }
     }
-    &:nth-child(6) {
+    &:nth-child(8) {
         .img_projet {
             background-image: url(/assets/images/holora_thumbnail.png);
             background-position-x: -40px;
             background-size: cover;
         }
     }
-    &:nth-child(7) {
+    &:nth-child(9) {
         .img_projet {
             background-image: url(/assets/images/paradis-perdu.png);
             background-position-x: -10px;
             background-size: cover;
         }
     }
-    &:nth-child(8) {
+    &:nth-child(10) {
         .img_projet {
             background-image: url(/assets/images/jeu-rpg.png);
             background-position-x: 95%;
@@ -164,14 +180,14 @@
             background-size: cover;
         }
     }
-    &:nth-child(9) {
+    &:nth-child(11) {
         .img_projet {
             background-image: url(/assets/images/souris.png);
             background-position-x: 35%;
             background-size: cover;
         }
     }
-    &:nth-child(10) {
+    &:nth-child(12) {
         .img_projet {
             background-image: url(/assets/images/touchdesigner.png);
             background-position-x: 50%;

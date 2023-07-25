@@ -155,11 +155,12 @@
                                 >
                                 <textarea
                                     class="input__element"
+                                    direction: ltr;
                                     type="text"
                                     name="comment"
                                     id="comment"
-                                    selection={{start:0, end:0}}
-                                    autoFocus={true}
+                                    autoFocus
+                                    onclick="placerBarreEcritureDebut()"
                                     required
                                     
                                 >
@@ -251,5 +252,17 @@
         <p class="copyright copyright-contact">
             Gabriel Gauthier © Tous droits réservés
         </p>
+        <script>
+            function placerBarreEcritureDebut() {
+  const textarea = document.getElementById("txt");
+  if (textarea) {
+    const texte = document.getElementById("txtValor").value;
+    textarea.focus();
+    textarea.setSelectionRange(0, 0);
+  } else {
+    console.error("L'élément avec l'id 'txt' n'a pas été trouvé dans le document.");
+  }
+}
+        </script>
     </body>
 </html>
